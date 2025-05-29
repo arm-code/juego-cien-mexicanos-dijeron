@@ -9,6 +9,8 @@ import equipo1Img from './assets/image1.png';
 import equipo2Img from './assets/image3.png';
 import img from './assets/image.png';
 import SoundButtons from './components/SoundButtons';
+import incorrectoSound from './assets/sounds/incorrecto.mp3';
+
 
 function App() {
   const [indice, setIndice] = useState(0);
@@ -32,6 +34,12 @@ function App() {
     setErrores1(0);
     setErrores2(0);
   };
+
+  const reproducirIncorrecto = () => {
+  const audio = new Audio(incorrectoSound);
+  audio.play();
+};
+
 
   const agregarPuntos = (eq: Equipo, puntos: number) => {
     if (eq === 'equipo1') setEquipo1((p) => p + puntos);
@@ -102,13 +110,25 @@ function App() {
       />
 
       <div className='controles-extras'>
-        <button onClick={() => registrarError('equipo1')}>
-          ❌ Error Equipo 1
-        </button>
-        <button onClick={() => registrarError('equipo2')}>
-          ❌ Error Equipo 2
-        </button>
-      </div>
+  <button
+    onClick={() => {
+      reproducirIncorrecto();
+      registrarError('equipo1');
+    }}
+  >
+    ❌ Error Equipo 1
+  </button>
+
+  <button
+    onClick={() => {
+      reproducirIncorrecto();
+      registrarError('equipo2');
+    }}
+  >
+    ❌ Error Equipo 2
+  </button>
+</div>
+
       <SoundButtons />
 
       <button className='siguiente' onClick={siguiente}>

@@ -26,6 +26,17 @@ export const preguntas: Pregunta[] = [
     ],
   },
   {
+    pregunta: "¿QUÉ ACCIONES PUEDEN PREVENIR LA CORRUPCIÓN?",
+    respuestas: [
+      { texto: "Implementar controles internos", puntos: 32 },
+      { texto: "Auditorias periodicas", puntos: 18},
+      { texto: "Línea de denuncia", puntos: 14 },
+      { texto: "Capacitacón continua", puntos: 12 },
+      { texto: "Politica de cero tolerancia", puntos: 9 },
+      { texto: "Inflar precios de servicios", puntos: 8 },      
+    ],
+  },
+  {
     pregunta: "¿QUÉ PUEDES HACER SI ERES TESTIGO DE UN ACTO DE CORRUPCIÓN?",
     respuestas: [
       { texto: "Denunciarlo en la instancia correspondiente", puntos: 40 },

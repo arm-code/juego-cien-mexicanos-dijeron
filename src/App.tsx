@@ -70,7 +70,7 @@ function App() {
 
       <div className='juego'>
         <ScoreBoard
-          nombre='Equipo 1'
+          nombre='Fuerza transparente'
           puntaje={equipo1}
           errores={errores1}
           imagen={equipo1Img}
@@ -84,7 +84,7 @@ function App() {
         />
 
         <ScoreBoard
-          nombre='Equipo 2'
+          nombre='Red de honor'
           puntaje={equipo2}
           errores={errores2}
           imagen={equipo2Img}

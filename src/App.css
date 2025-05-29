@@ -1,0 +1,113 @@
+.app {
+  text-align: center;
+  font-family: system-ui, sans-serif;
+  padding: 2rem;
+  
+}
+
+.titulo {
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+}
+
+.board {
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.lista-respuestas {
+  list-style: none;
+  padding: 0;
+}
+
+.respuesta {
+  margin: 0.5rem 0;
+  display: flex;
+  justify-content: space-between;
+  padding: 0.5rem 1rem;
+  border: 2px solid #ccc;
+  border-radius: 8px;
+}
+
+.texto {
+  font-weight: bold;
+}
+
+.puntos {
+  font-size: 1.2rem;
+}
+
+.siguiente {
+  margin-top: 2rem;
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
+}
+
+.juego {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 1rem;
+  margin: 2rem 0;
+  flex-wrap: wrap;
+}
+
+.scoreboard {
+  flex: 1;
+  max-width: 200px;
+  text-align: center;
+  border: 2px solid #555;
+  border-radius: 10px;
+  padding: 1rem;
+  background-color: #f7f7f7;
+}
+
+.scoreboard h2 {
+  margin-bottom: 0.5rem;
+}
+
+.puntaje {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+.controles button {
+  font-size: 1.5rem;
+  width: 40px;
+  height: 40px;
+  margin: 0 0.25rem;
+}
+
+
+.point-control {
+  display: flex;
+  gap: 0.5rem;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 1.5rem;
+  flex-wrap: wrap;
+}
+
+.point-control input[type="number"] {
+  width: 80px;
+  padding: 0.25rem 0.5rem;
+}
+
+.errores {
+  margin-top: 0.5rem;
+}
+
+.controles-extras {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-bottom: 1rem;
+  flex-wrap: wrap;
+}
+
+.controles-extras button {
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  cursor: pointer;
+}
